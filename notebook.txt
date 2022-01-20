@@ -21,3 +21,24 @@ windows安装git，进入https://git-scm.com/downloads下载
 使用git log查看提交历史记录，从上到下依次为从近到远的排序，如果之需要查看第一行，则加上--pretty=oneline
 
 8. 版本回退
+使用git reset --hard HEAD^来回到上一个版本，HEAD^^回到上两个版本...
+使用HEAD~100回到上100个版本
+如果删除后悔，可以将HEAD替换为版本号，但是只需要输入前几位，系统会自动寻找
+
+9. 命令记录
+上一个步骤中，如果忘记了版本号，可以通过git reflog查询每一步操作，版本号显示在开头位置
+
+10. 工作区和暂存区
+工作区为git仓库所在文件夹，在本案例中为/e/Git文件夹，文件夹中的.git隐藏文件为版本库
+.git文件中存放了：暂存区(stage)，自动创建的第一个分支master，指向master的一个指针叫HEAD
+文件编辑并保存后，所有修改记录被保存在工作区中
+git add将所有修改放到暂存区(stage)，git commit可以一次性把暂存区的所有修改提交到分支，默认为master
+使用git diff HEAD -- [文件名]查看工作区和版本库中最新版本的区别
+
+11. 撤销修改
+使用git checkout -- [文件名]让文件回到最近一次git commit或git add的状态
+使用git reset HEAD [文件名]将工作区的文件替换为暂存区的文件
+
+12. 删除文件
+
+
