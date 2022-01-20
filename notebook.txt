@@ -40,5 +40,9 @@ git add将所有修改放到暂存区(stage)，git commit可以一次性把暂�
 使用git reset HEAD [文件名]将工作区的文件替换为暂存区的文件
 
 12. 删除文件
+删除文件后，使用git rm [文件名]来将文件从版本库移除
+误删文件后，使用git checkout -- [文件名]来恢复
 
+13. 远程仓库（以Github为例）
+第一步，创建SSH Key，输入ssh-keygen -t rsa -C "email@example.com"
 
