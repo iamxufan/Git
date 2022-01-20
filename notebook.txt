@@ -1,0 +1,21 @@
+学习git
+1. 安装git
+windows安装git，进入https://git-scm.com/downloads下载
+
+2. 创建版本库
+创建空白文件夹，cd进入，输入git init
+
+3. 添加文件进入版本库
+创建文件后，使用git add [文件名]添加到仓库
+
+4. 提交文件
+添加好文件后，使用git commit -m "[备注]"提交到仓库
+
+5. 查看状态
+使用git status查看当前仓库状态
+
+6. 查看修改内容
+使用git diff(different)查看修改内容
+
+8. 版本回退
+
