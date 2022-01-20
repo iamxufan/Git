@@ -48,4 +48,12 @@ git add将所有修改放到暂存区(stage)，git commit可以一次性把暂�
 第二布，找到用户下面的.ssh文件，复制id_rsa.pub
 第三步，打开github，找到设置，添加ssh，将复制的内容粘贴进去
 
-14. 
+14. 创建远程仓库
+在github创建一个新的仓库Create a new repo，随后选择将本地仓库推送至github中，按步骤操作
+创建完成后，github中会创建一个与本地完全相同的仓库，使用git push origin master将本地仓库推送至远程仓库
+
+15. 解除与远程库的连接
+如需解除本地库与远程库的连接，首先使用git remote -v查看远程库信息，再使用git remote rm [远程库名称]进行删除
+
+16. 从远程库克隆
+使用git clone [远程仓库地址]进行可用，Git支持多种协议，ssh速度最快，https较慢
