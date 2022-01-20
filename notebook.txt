@@ -17,5 +17,7 @@ windows安装git，进入https://git-scm.com/downloads下载
 6. 查看修改内容
 使用git diff(different)查看修改内容
 
-8. 版本回退
+7. 查看日志
+使用git log查看提交历史记录，从上到下依次为从近到远的排序，如果之需要查看第一行，则加上--pretty=oneline
 
+8. 版本回退
