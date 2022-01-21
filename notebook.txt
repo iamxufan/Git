@@ -57,3 +57,55 @@ git add将所有修改放到暂存区(stage)，git commit可以一次性把暂�
 
 16. 从远程库克隆
 使用git clone [远程仓库地址]进行可用，Git支持多种协议，ssh速度最快，https较慢
+
+17. 创建分支
+使用git branch dev创建一个新的分支，取名为dev
+使用git checkout dev切换到dev分支，建议使用switch(19条讲到)
+使用git checkout -b dev合并上述操作
+使用git branch查看当前分支
+
+18. 合并分支
+在dev分支的工作完成后，需要合并到master
+首先切换到master分支，git checkout master，然后使用git merge dev将dev的修改合并到master中
+合并完成后删除dev分支，git branch -d dev
+
+19. 切换分支
+创建并切换到新的分支，使用git switch -c dev，切换到master分支，使用git switch master
+
+20. 解决冲突
+如果在branch1和master中同时修改了某些内容并提交后，使用git merge合并分支后会出现冲突
+使用git status查看状态并根据提示修改某一分支中文件的内容，使之相同
+修改后进行提交，在进行合并，使用git log查看分支合并的情况，最后删除多余的分支
+使用git log --graph可以看到分支合并图
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
